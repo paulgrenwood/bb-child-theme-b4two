@@ -14,7 +14,7 @@ require_once 'gravityforms.php';
 
 // Enable Font Awesome 5 Pro
 add_filter( 'fl_enable_fa5_pro', '__return_true' );
-add_filter( 'fl_get_fa5_url', function() { return get_stylesheet_directory_uri() . '/fonts/fontawesome/css/all.min.css'; } );
+add_filter( 'fl_get_fa5_url', function() { return get_stylesheet_directory_uri() . '/fonts/node_modules/@fortawesome/fontawesome-pro/css/all.min.css'; } );
 
 // Actions
 add_action( 'wp_enqueue_scripts', 'FLChildTheme::enqueue_scripts', 1000 );
@@ -234,6 +234,7 @@ add_filter( 'fl_less_vars', function( $vars ) {
 */
 
 //Enqueue Font Awesome Locally
+/*
 add_action( 'wp_enqueue_scripts', function() {
     global $wp_styles;
     if ( isset( $wp_styles->queue ) ) {
@@ -248,3 +249,4 @@ add_action( 'wp_enqueue_scripts', function() {
 		if( !$fa_enqueued ){ wp_enqueue_style('font-awesome-5', get_stylesheet_directory_uri() . '/fonts/fontawesome/css/all.min.css', array(), '5.8.1'); }
     }
 }, 11 );
+*/
