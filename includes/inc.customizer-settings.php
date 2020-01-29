@@ -6,12 +6,6 @@ function gwstandard_customizer_options( $wp_customize ){
 	
 	$wp_customize->remove_panel( 'fl-header' );
 	$wp_customize->remove_panel( 'fl-footer' );
-	
-/*
-	foreach ($wp_customize->sections() as $section_key => $section_object ) {
-	  var_dump( $section_key );
-	}
-*/
 
 
 	/*
@@ -404,111 +398,5 @@ function gwstandard_customizer_options( $wp_customize ){
 			)
 		)
 	);
-	
-	
-	/*
-	===
-	HEADING / TEXT MARGINS
-	===
-	*/
-	
-/*
-	FLCustomizer::add_section( 'fl-margins', array(
-			'title'		=> _x( 'Margins', 'Heading / Paragraph Margins', 'gwstandard' ),
-			'panel'		=> 'fl-general',
-			'options'	=> array(
-				'margin-p-bottom' 	=> array(
-					'setting'		=> array(
-						'default'	=> '',
-						'transport'	=> 'postMessage'
-					),
-					'control'		=> array(
-						'class'		=> 'FLCustomizerControl',
-						'label'		=> __('Paragraph Margin Bottom', 'gwstandard'),
-						'type'		=> 'slider',
-						'choices'	=> array(
-							'min'	=> -30,
-							'max'	=> 100,
-							'step'	=> 1
-						)
-					)
-				)
-			)
-		)
-	);
-*/
-	
-/*
-	$paragraph_margins = 'slide-type' => array(
-		'setting'	=> array(
-			'default'	=> '10',
-			'transport'	=> 'postMessage'
-		),
-		'control'	=> array(
-			'class'		=> 'FLCustomizerControl',
-			'label'		=> __('Paragraph Margin Bottom', 'gwstandard'),
-			'type'		=> 'slider',
-			'choices'	=> array(
-				'min'	=> 0,
-				'max'	=> 100,
-				'step'	=> 1
-			)
-		),
-	);
-*/
-/*
-	$wp_customize->add_setting(
-		'gwstandard_h4_margin-bottom',
-		array(
-			'default' => '10',
-			'transport' => 'postMessage'
-		)
-	);
-
-	$wp_customize->add_control(
-		new FLCustomizerControl( $wp_customize, 'gwstandard_h4_margin-bottom', array(
-			'label'			=> __( 'H4 Margin Bottom', 'gwstandard' ),
-			'section'		=> 'fl-heading-font',
-			'settings'		=> 'gwstandard_h4_margin-bottom',
-			'type'			=> 'slider',
-			'choices'		=> array(
-				'min'		=> 0,
-				'max'		=> 50,
-				'step'		=> 1
-			)
-		));
-	);
-*/
 }
-
-// Google Fonts filter callback function
-function fl_google_fonts_callback( $fonts ) {
-	var_dump('FL GOOGLE FONTS CALLBACK');
-	var_dump('==========');
-	var_dump( $fonts );
-    // (maybe) modify $string
-    return $fonts;
-}
-//add_filter( 'fl_theme_google_fonts', 'fl_google_fonts_callback', 10, 3 );
-//apply_filters( 'fl_theme_google_fonts', $fonts );
-
-function my_font_subset( $subset, $font ) {
-	//var_dump( $fc );
-	var_dump( $font );
-	//var_dump( '==========' );
-	//var_dump( $subset );
-    if ( $font == 'Bitter' ) {
-	    var_dump( 'BITTER' );
-        $subset = '&subset=latin,latin-ext';
-    }
-    //$fc++;
-    //return $subset;
-}
-//add_filter( 'fl_font_subset', 'my_font_subset', 10, 2 );
-
-function fl_google_json( $json ){
-	var_dump( $json );
-	return $json;
-}
-//add_filter( 'fl_theme_get_google_json', 'fl_google_json', 10, 2 );
 ?>
