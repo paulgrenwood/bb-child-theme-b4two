@@ -9,6 +9,7 @@ require_once 'classes/class-fl-child-theme.php';
 
 // Customizer Additions
 //	• Custom Margins
+require_once 'includes/inc.customizer-settings.php';
 require_once 'includes/inc.customizer-compile.php';
 
 // GravityForms

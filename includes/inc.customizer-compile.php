@@ -1,6 +1,5 @@
 <?php
 
-require_once 'customizer/customizer-settings.php';
 //require_once 'customizer/customizer-css-wphead.php';
 
 add_filter( 'fl_theme_compile_less_paths', function( $paths ){
