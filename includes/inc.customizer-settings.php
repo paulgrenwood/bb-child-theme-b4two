@@ -175,6 +175,58 @@ function gwstandard_customizer_options( $wp_customize ){
 		)
 	);
 	
+	//INTRO TEXT FONT SIZE - SETTINGS
+	$wp_customize->add_setting(
+		'gwstandard__intro_text__font_size_medium',
+		array(
+			'default' => '18',
+			'transport' => 'postMessage'
+		)
+	);
+	//INTRO TEXT FONT SIZE - CONTROLS
+	$wp_customize->add_control(
+		new FLCustomizerControl(
+			$wp_customize,
+			'gwstandard__intro_text__font_size_medium',
+			array(
+				'label'		=> __('Intro Text Font Size (Medium)', 'gwstandard' ),
+				'type'		=> 'slider',
+				'section'	=> 'fl-body-font',
+				'choices'	=> array(
+					'min'  => 10,
+					'max'  => 72,
+					'step' => 1
+				)
+			)
+		)
+	);
+	
+	//INTRO TEXT FONT SIZE - SETTINGS
+	$wp_customize->add_setting(
+		'gwstandard__intro_text__font_size_mobile',
+		array(
+			'default' => '18',
+			'transport' => 'postMessage'
+		)
+	);
+	//INTRO TEXT FONT SIZE - CONTROLS
+	$wp_customize->add_control(
+		new FLCustomizerControl(
+			$wp_customize,
+			'gwstandard__intro_text__font_size_mobile',
+			array(
+				'label'		=> __('Intro Text Font Size (Mobile)', 'gwstandard' ),
+				'type'		=> 'slider',
+				'section'	=> 'fl-body-font',
+				'choices'	=> array(
+					'min'  => 10,
+					'max'  => 72,
+					'step' => 1
+				)
+			)
+		)
+	);
+	
 	//PARAGRAPH - SETTINGS
 	$wp_customize->add_setting(
 		'gwstandard__body_font__margin_bottom',
