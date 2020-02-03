@@ -10,6 +10,28 @@ function gwstandard_customizer_options( $wp_customize ){
 
 	/*
 	===
+	LOGO
+	===
+	*/
+	
+	// LOGO - SETTINGS
+	$wp_customize->add_setting( 'gwstandard_theme_logo' );
+	
+	// LOGO - CONTROLS
+	$wp_customize->add_control(
+		new WP_Customize_Image_control(
+			$wp_customize,
+			'gwstandard_theme_logo',
+			array(
+				'label'		=> __( 'Upload Logo', 'gwstandard' ),
+				'section' 	=> 'title_tagline',
+				'settings'	=> 'gwstandard_theme_logo'
+			)
+		)
+	);
+
+	/*
+	===
 	HEADING CONTROLS
 	===
 	*/
