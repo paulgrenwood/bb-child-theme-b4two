@@ -31,13 +31,22 @@ add_filter( 'fl_theme_add_panel_data', function( $data, $key ) {
 	        	// H2: Font Weight
 	        	$data['sections']['fl-heading-font']['options']['b42s__h2__font_weight'] = array(
 		        	'setting' => array(
-			        	'default'		=> '700',
+			        	'default'		=> 'inherit',
 		        	),
 		        	'control' => array(
-			        	'class'    => 'FLCustomizerControl',
-						'label'    => __( 'H2 Font Weight', 'fl-automator' ),
-						'type'     => 'font-weight',
-						'connect'  => 'fl-heading-font-family',
+			        	'class'			=> 'WP_Customize_Control',
+						'label'			=> __( 'H2 Font Weight', 'fl-automator' ),
+						'type'			=> 'select',
+						'choices' => array(
+							'inherit'	=> 'Default',
+							'200'		=> 'Thin',
+							'300'		=> 'Light',
+							'400'		=> 'Regular',
+							'500'		=> 'Medium',
+							'600'		=> 'Semi-Bold',
+							'700'		=> 'Bold',
+							'900'		=> 'Heavy'
+						)
 		        	)
 	        	);
 	        	
@@ -63,13 +72,22 @@ add_filter( 'fl_theme_add_panel_data', function( $data, $key ) {
 	        	// H3: Font Weight
 	        	$data['sections']['fl-heading-font']['options']['b42s__h3__font_weight'] = array(
 		        	'setting' => array(
-			        	'default'		=> '700',
+			        	'default'		=> 'inherit',
 		        	),
 		        	'control' => array(
-			        	'class'    => 'FLCustomizerControl',
-						'label'    => __( 'H3 Font Weight', 'fl-automator' ),
-						'type'     => 'font-weight',
-						'connect'  => 'fl-heading-font-family',
+			        	'class'			=> 'WP_Customize_Control',
+						'label'			=> __( 'H3 Font Weight', 'fl-automator' ),
+						'type'			=> 'select',
+						'choices' => array(
+							'inherit'	=> 'Default',
+							'200'		=> 'Thin',
+							'300'		=> 'Light',
+							'400'		=> 'Regular',
+							'500'		=> 'Medium',
+							'600'		=> 'Semi-Bold',
+							'700'		=> 'Bold',
+							'900'		=> 'Heavy'
+						)
 		        	)
 	        	);
 	        	
