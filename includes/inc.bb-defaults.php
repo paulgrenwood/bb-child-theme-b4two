@@ -21,10 +21,7 @@ function b42s__beaver_builder_register_settings_form_short( $form, $id ) {
 	$form['tabs']['general']['sections']['responsive']['fields']['responsive_breakpoint']['default'] = '767';
 	
 	//Default Module Margins: 10px
-	$form['tabs']['general']['sections']['modules']['fields']['module_margins']['default'] = '10';
-		
-	//$form['tabs']['general']['sections']['responsive']['fields']['medium_breakpoint']['default'] = '1200';
-	   
+	$form['tabs']['general']['sections']['modules']['fields']['module_margins']['default'] = '10';	   
    } 
    
    return $form;

@@ -7,6 +7,10 @@ define( 'FL_CHILD_THEME_URL', get_stylesheet_directory_uri() );
 // Classes
 require_once 'classes/class-fl-child-theme.php';
 
+// Fonts
+//	• Build in Avenir Next
+require_once 'includes/inc.fonts.php';
+
 // Customizer Additions
 //	• Custom Margins
 require_once 'includes/inc.customizer-settings.php';
