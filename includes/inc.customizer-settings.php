@@ -14,6 +14,7 @@ function gwstandard_customizer_options( $wp_customize ){
 	===
 	*/
 	
+/*
 	// LOGO - SETTINGS
 	$wp_customize->add_setting( 'gwstandard_theme_logo' );
 	
@@ -29,6 +30,7 @@ function gwstandard_customizer_options( $wp_customize ){
 			)
 		)
 	);
+*/
 
 	/*
 	===
@@ -36,6 +38,7 @@ function gwstandard_customizer_options( $wp_customize ){
 	===
 	*/
 	
+	/*
 	//H2 - SETTINGS
 	$wp_customize->add_setting(
 		'gwstandard_h2_color',
@@ -55,7 +58,6 @@ function gwstandard_customizer_options( $wp_customize ){
 			)
 		)
 	);
-	
 	
 	//H3 - SETTINGS
 	$wp_customize->add_setting(
@@ -77,6 +79,10 @@ function gwstandard_customizer_options( $wp_customize ){
 			)
 		)
 	);
+	
+	
+	
+	
 	
 	
 	//H4 - SETTINGS
@@ -142,6 +148,8 @@ function gwstandard_customizer_options( $wp_customize ){
 			)
 		)
 	);
+	
+	*/
 	
 	/*
 	===
@@ -230,13 +238,6 @@ function gwstandard_customizer_options( $wp_customize ){
 		)
 	);
 	
-	*/
-	
-	
-	
-	
-	
-	
 	//INTRO TEXT MARGIN BOTTOM - SETTINGS
 	$wp_customize->add_setting(
 		'gwstandard__intro_text__margin_bottom',
@@ -263,7 +264,6 @@ function gwstandard_customizer_options( $wp_customize ){
 			)
 		)
 	);
-	
 	
 	//SECONDARY INTRO FONT SIZE - SETTINGS
 	$wp_customize->add_setting(
@@ -346,7 +346,6 @@ function gwstandard_customizer_options( $wp_customize ){
 		)
 	);
 	
-	
 	//SMALL TEXT FONT SIZE - SETTINGS
 	$wp_customize->add_setting(
 		'gwstandard__small_text__font_size',
@@ -373,7 +372,7 @@ function gwstandard_customizer_options( $wp_customize ){
 			)
 		)
 	);
-		
+	
 	//SMALL TEXT LINE HEIGHT - SETTINGS
 	$wp_customize->add_setting(
 		'gwstandard__small_text__line_height',
@@ -401,7 +400,6 @@ function gwstandard_customizer_options( $wp_customize ){
 		)
 	);
 	
-	
 	//SMALL TEXT MARGIN BOTTOM - SETTINGS
 	$wp_customize->add_setting(
 		'gwstandard__small_text__margin_bottom',
@@ -428,5 +426,29 @@ function gwstandard_customizer_options( $wp_customize ){
 			)
 		)
 	);
+	
+	*/
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+	
+	
+	
 }
 ?>
