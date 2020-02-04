@@ -149,6 +149,8 @@ function gwstandard_customizer_options( $wp_customize ){
 	===
 	*/
 	
+	/*
+	
 	//INTRO TEXT FONT SIZE - SETTINGS
 	$wp_customize->add_setting(
 		'gwstandard__intro_text__font_size',
@@ -174,6 +176,8 @@ function gwstandard_customizer_options( $wp_customize ){
 			)
 		)
 	);
+	
+	*/
 	
 	//PARAGRAPH - SETTINGS
 	$wp_customize->add_setting(
