@@ -13,6 +13,10 @@ require_once 'includes/inc.customizer-settings.php';
 require_once 'includes/inc.customizer-theme-settings.php';
 require_once 'includes/inc.customizer-compile.php';
 
+// Beaver Builder
+//	• Defaults
+require_once 'includes/inc.bb-defaults.php';
+
 // GravityForms
 //	• Label Visibility Option (Enabled)
 require_once 'includes/inc.forms.php';

@@ -1,7 +1,7 @@
 /*
 Theme Name: Bowl for Two (Beaver Builder Child Theme)
 Theme URI: http://www.wpbeaverbuilder.com
-Version: 1.0.2.14.1
+Version: 1.0.2.14.2
 Description: Child Theme with some Customization Options Built In
 Author: The Grenwoods
 Author URI: https://www.thegrenwoods.com
@@ -32,115 +32,115 @@ img.lazyloaded {
    opacity: 1;
 }
 
-.gwd_inline-block{
+.b42s_inline-block{
     display: inline-block;
 }
 
-.gwd_child-margins_zero-exterior > .fl-module-content > *:first-child,
-.gwd_child-margins_zero-exterior .fl-rich-text > *:first-child,
+.b42s_child-margins_zero-exterior > .fl-module-content > *:first-child,
+.b42s_child-margins_zero-exterior .fl-rich-text > *:first-child,
 .child-margins_zero-exterior > .fl-module-content > *:first-child,
 .child-margins_zero-exterior .fl-rich-text > *:first-child{
     margin-top: 0 !important;
 }
 
-.gwd_child-margins_zero-exterior > .fl-module-content > *:last-child,
-.gwd_child-margins_zero-exterior .fl-rich-text > *:last-child,
+.b42s_child-margins_zero-exterior > .fl-module-content > *:last-child,
+.b42s_child-margins_zero-exterior .fl-rich-text > *:last-child,
 .child-margins_zero-exterior > .fl-module-content > *:last-child,
 .child-margins_zero-exterior .fl-rich-text > *:last-child{
     margin-bottom: 0 !important;
 }
 
-.gwd_text-align_left,
-.gwd_text-align_left > .fl-node-content,
-.gwd_text-align_left > .fl-node-content .fl-button-wrap{
+.b42s_text-align_left,
+.b42s_text-align_left > .fl-node-content,
+.b42s_text-align_left > .fl-node-content .fl-button-wrap{
     text-align: left;
 }
-.gwd_text-align_right,
-.gwd_text-align_right > .fl-node-content,
-.gwd_text-align_right > .fl-node-content .fl-button-wrap{
+.b42s_text-align_right,
+.b42s_text-align_right > .fl-node-content,
+.b42s_text-align_right > .fl-node-content .fl-button-wrap{
     text-align: right;
 }
-.gwd_text-align_center,
-.gwd_text-align_center > .fl-node-content,
-.gwd_text-align_center > .fl-node-content .fl-button-wrap{
+.b42s_text-align_center,
+.b42s_text-align_center > .fl-node-content,
+.b42s_text-align_center > .fl-node-content .fl-button-wrap{
 	text-align: center;
 }
 
 @media (max-width: 767px){
-	.gwd-sm_text-align_left,
-	.gwd-sm_text-align_left > .fl-node-content,
-	.gwd-sm_text-align_left > .fl-node-content .fl-button-wrap{
+	.b42s-sm_text-align_left,
+	.b42s-sm_text-align_left > .fl-node-content,
+	.b42s-sm_text-align_left > .fl-node-content .fl-button-wrap{
 		text-align: left;
 	}
-	.gwd-sm_text-align_right,
-	.gwd-sm_text-align_right > .fl-node-content,
-	.gwd-sm_text-align_right > .fl-node-content .fl-button-wrap{
+	.b42s-sm_text-align_right,
+	.b42s-sm_text-align_right > .fl-node-content,
+	.b42s-sm_text-align_right > .fl-node-content .fl-button-wrap{
 		text-align: right;
 	}
-	.gwd-sm_text-align_center,
-	.gwd-sm_text-align_center > .fl-node-content,
-	.gwd-sm_text-align_center > .fl-node-content .fl-button-wrap{
+	.b42s-sm_text-align_center,
+	.b42s-sm_text-align_center > .fl-node-content,
+	.b42s-sm_text-align_center > .fl-node-content .fl-button-wrap{
 		text-align: center;
 	}
 	
-	.gwd_hide__small{
+	.b42s_hide__small{
 		display: none !important;
 	}
 }
 
 @media (min-width: 768px) and (max-width: 992px){
-	.gwd-md_text-align_left,
-	.gwd-md_text-align_left > .fl-node-content,
-	.gwd-md_text-align_left > .fl-node-content .fl-button-wrap{
+	.b42s-md_text-align_left,
+	.b42s-md_text-align_left > .fl-node-content,
+	.b42s-md_text-align_left > .fl-node-content .fl-button-wrap{
 		text-align: left;
 	}
-	.gwd-md_text-align_right,
-	.gwd-md_text-align_right > .fl-node-content,
-	.gwd-md_text-align_right > .fl-node-content .fl-button-wrap{
+	.b42s-md_text-align_right,
+	.b42s-md_text-align_right > .fl-node-content,
+	.b42s-md_text-align_right > .fl-node-content .fl-button-wrap{
 		text-align: right;
 	}
-	.gwd-md_text-align_center,
-	.gwd-md_text-align_center > .fl-node-content,
-	.gwd-md_text-align_center > .fl-node-content .fl-button-wrap{
+	.b42s-md_text-align_center,
+	.b42s-md_text-align_center > .fl-node-content,
+	.b42s-md_text-align_center > .fl-node-content .fl-button-wrap{
 		text-align: center;
 	}
 	
-	.gwd_hide__medium{
+	.b42s_hide__medium{
 		display: none !important;
 	}
 }
 
 @media (min-width: 992px){
-	.gwd_hide__large{
+	.b42s_hide__large{
 		display: none !important;
 	}
 }
 
 @media (min-width: 768px){
-	.gwd_two-col_paragraph .fl-rich-text{
+	.b42s_two-col_paragraph .fl-rich-text{
 		-webkit-column-count: 2;
 	    -moz-column-count: 2;
 	    column-count: 2;
 	}
 	
-	.gwd_two-col_paragraph .fl-rich-text > *:last-child{
+	.b42s_two-col_paragraph .fl-rich-text > *:last-child{
 		margin-bottom: 0 !important;
 	}
-	.gwd_two-col_paragraph .fl-rich-text > *:first-child{
+	.b42s_two-col_paragraph .fl-rich-text > *:first-child{
 		margin-top: 0 !important;
 	}
 }
 
-.gwd_p_no-margin p{
+.b42s_p_no-margin p{
     margin: 0;
 }
 
-.gwd_icon-group_no-margin-top-bot .fl-icon{
+.b42s_icon-group_no-margin-top-bot .fl-icon{
     margin-top: 0;
     margin-bottom: 0;
 }
 
-.gwd_fl-col-group_flex-center .fl-col-group{
+.b42s_fl-col-group_flex-center .fl-col-group{
     display: flex;
     align-items: center;
 }
