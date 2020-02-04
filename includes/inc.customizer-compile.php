@@ -14,6 +14,7 @@ add_filter( 'fl_less_vars', function( $vars ) {
   for( $h = 2; $h <= 6; $h++ ){
 	  $vars['b42s__h' . $h . '__color'] = $mods['b42s__h' . $h . '__color'] ?: '#4a4a4a';
 	  $vars['b42s__h' . $h . '__font_weight'] = $mods['b42s__h' . $h . '__font_weight'] ?: 'inherit';
+	  $vars['b42s__h' . $h . '__font_format'] = $mods['b42s__h' . $h . '__font_format'] ?: 'inherit';
   }
   
     $vars['b42s__body_font__margin_bottom'] = $mods['b42s__body_font__margin_bottom'] ?: 10;
