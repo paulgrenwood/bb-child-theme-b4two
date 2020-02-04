@@ -177,8 +177,6 @@ function gwstandard_customizer_options( $wp_customize ){
 		)
 	);
 	
-	*/
-	
 	//PARAGRAPH - SETTINGS
 	$wp_customize->add_setting(
 		'gwstandard__body_font__margin_bottom',
@@ -204,7 +202,6 @@ function gwstandard_customizer_options( $wp_customize ){
 			)
 		)
 	);
-	
 	
 	//INTRO TEXT LINE HEIGHT - SETTINGS
 	$wp_customize->add_setting(
@@ -232,6 +229,13 @@ function gwstandard_customizer_options( $wp_customize ){
 			)
 		)
 	);
+	
+	*/
+	
+	
+	
+	
+	
 	
 	//INTRO TEXT MARGIN BOTTOM - SETTINGS
 	$wp_customize->add_setting(
