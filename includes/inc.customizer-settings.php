@@ -172,8 +172,8 @@ function gwstandard_customizer_options( $wp_customize ){
 					'step' => 1
 				)
 			),
-			'responsive'	=> true,
-		)
+		),
+		'responsive'	=> true,
 	);
 	
 	//PARAGRAPH - SETTINGS
