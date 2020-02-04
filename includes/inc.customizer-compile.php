@@ -29,6 +29,10 @@ add_filter( 'fl_less_vars', function( $vars ) {
 	$vars['b42s__small_text__line_height'] = $mods['b42s__small_text__line_height'] ?: 1.6;
 	$vars['b42s__small_text__margin_bottom'] = $mods['b42s__small_text__margin_bottom'] ?: 22;
 	
+	$vars['b42s__header_nav__font_size'] = $mods['b42s__header_nav__font_size'] ?:16;
+	$vars['b42s__header_nav__line_height'] = $mods['b42s__header_nav__line_height'] ?: 1.4;
+	$vars['b42s__header_nav__letter_spacing'] = $mods['b42s__header_nav__letter_spacing'] ?: .7;
+	
 	$vars['b42s__blockquote__color'] = $mods['b42s__blockquote__color'] ?: '#4a4a4a';
 	$vars['b42s__blockquote__font_size'] = $mods['b42s__blockquote__font_size'] ?: 22;
 	$vars['b42s__blockquote__line_height'] = $mods['b42s__blockquote__line_height'] ?: 1.6;

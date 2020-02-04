@@ -276,6 +276,68 @@ add_filter( 'fl_theme_add_panel_data', function( $data, $key ) {
                 );
                 
                 
+                
+                /*
+	            ===
+	            HEADER NAV
+	            ===
+	            */
+	            
+	            // Header Nav: Font Size
+	            $data['sections']['fl-body-font']['options']['b42s__header_nav__font_size'] = array(
+					'setting' => array(
+                    	'default'		=> '16',
+                    ),
+                    'control' => array(
+                        'class'			=> 'FLCustomizerControl',
+                        'type'			=> 'slider',
+                        'label'			=> __( 'Header Nav: Font Size', 'b42s' ),
+                        'responsive'	=> true,
+                        'choices' => array(
+                            'min'		=> 10,
+                            'max'		=> 72,
+                            'step'		=> 1,
+                        ),
+                    ),
+                );
+                
+                // Small: Line Height
+                $data['sections']['fl-body-font']['options']['b42s__header_nav__line_height'] = array(
+	                'setting' => array(
+		                'default'		=> '1.4'
+	                ),
+	                'control' => array(
+		                'class'			=> 'FLCustomizerControl',
+		                'type'			=> 'slider',
+		                'label'			=> __('Header Nav: Line Height', 'b42s'),
+		                'responsive'	=> true,
+		                'choices' => array(
+			            	'min'		=> 1,
+			            	'max'		=> 2.5,
+			            	'step'		=> 0.05
+		                ),
+	                ),
+                );
+                
+                // Small: Margin Bottom
+                $data['sections']['fl-body-font']['options']['b42s__header_nav__letter_spacing'] = array(
+	              	'setting' => array(
+		              	'default'		=> '.7'
+	              	),
+	              	'control' => array(
+		              	'class'			=> 'FLCustomizerControl',
+		              	'type'			=> 'slider',
+		              	'label'			=> __('Header Nav: Letter Spacing', 'b42s'),
+		              	'responsive'	=> true,
+		              	'choices' => array(
+			            	'min'		=> 0,
+			            	'max'		=> 3,
+			            	'step'		=> .1	
+		              	),
+	              	),
+                );
+                
+                
                 /*
 	            ===
 	            BLOCK QUOTE
