@@ -109,33 +109,33 @@ if ( ! function_exists( 'wpex_styles_dropdown' ) ) {
 add_filter( 'tiny_mce_before_init', 'wpex_styles_dropdown' );
 
 // Hooks your functions into the correct filters
-function gwd_add_mce_button() {
+function b42s_add_mce_button() {
 	// check user permissions
 	if ( !current_user_can( 'edit_posts' ) && !current_user_can( 'edit_pages' ) ) {
 		return;
 	}
 	// check if WYSIWYG is enabled
 	if ( 'true' == get_user_option( 'rich_editing' ) ) {
-		add_filter( 'mce_external_plugins', 'gwd_add_tinymce_plugin' );
-		add_filter( 'mce_buttons', 'gwd_register_mce_button' );
+		add_filter( 'mce_external_plugins', 'b42s_add_tinymce_plugin' );
+		add_filter( 'mce_buttons', 'b42s_register_mce_button' );
 	}
 }
-add_action('admin_head', 'gwd_add_mce_button');
+add_action('admin_head', 'b42s_add_mce_button');
 
 // Declare script for new button
-function gwd_add_tinymce_plugin( $plugin_array ) {
-	$plugin_array['gwd_mce_button'] = get_stylesheet_directory_uri() .'/js/mce-button.js';
+function b42s_add_tinymce_plugin( $plugin_array ) {
+	$plugin_array['b42s_mce_button'] = get_stylesheet_directory_uri() .'/js/mce-button.js';
 	return $plugin_array;
 }
 
 // Register new button in the editor
-function gwd_register_mce_button( $buttons ) {
-	array_push( $buttons, 'gwd_mce_button' );
+function b42s_register_mce_button( $buttons ) {
+	array_push( $buttons, 'b42s_mce_button' );
 	return $buttons;
 }
 
-add_filter('tiny_mce_before_init','gwd_editor_dynamic_styles');
-function gwd_editor_dynamic_styles( $mceInit ) {
+add_filter('tiny_mce_before_init','b42s_editor_dynamic_styles');
+function b42s_editor_dynamic_styles( $mceInit ) {
     $styles = 'body.mce-content-body .fl-button{background-color:#4a4a4a;color:#fff;padding:12px 24px;display:inline-block;text-decoration:none;border:2px solid #4a4a4a;border-radius:9999px}body.mce-content-body .fl-button:focus,body.mce-content-body .fl-button:hover{color:#4a4a4a;background-color:transparent}body.mce-content-body .fl-button.fl-button_ghost{color:#4a4a4a;background-color:transparent}body.mce-content-body .fl-button.fl-button_ghost:focus,body.mce-content-body .fl-button.fl-button_ghost:hover{background-color:#4a4a4a;color:#fff}body.mce-content-body .fl-button.fl-button_small{padding:5px 15px}body.mce-content-body p.intro_text{font-size:1.5em}body.mce-content-body p.intro_text_alt{font-size:1.25em}body.mce-content-body p.small_text{font-size:.75em}';
     if ( isset( $mceInit['content_style'] ) ) {
         $mceInit['content_style'] .= ' ' . $styles . ' ';

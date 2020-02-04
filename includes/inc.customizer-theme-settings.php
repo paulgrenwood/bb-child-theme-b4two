@@ -275,23 +275,5 @@ add_filter( 'fl_theme_add_panel_data', function( $data, $key ) {
 	              	),
                 );
         }
-        else if( 'fl-settings' === $key ){
-	        /*
-	        ===========================
-	        title_tagline
-	        ===========================
-	        */
-        	
-        	// H2: Color
-        	$data['sections']['title_tagline']['options']['b42s__theme__logo'] = array(
-	        	'setting' => array(
-		        	'default'		=> '',
-	        	),
-	        	'control' => array(
-		        	'class'			=> 'WP_Customize_Image_Control',
-		        	'label'			=> __('Upload Logo', 'b42s')	
-	        	),	
-        	);
-        }
         return $data;
 }, 10, 2 );

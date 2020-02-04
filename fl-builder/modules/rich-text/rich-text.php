@@ -47,7 +47,7 @@ FLBuilder::register_module('FLRichTextModule', array(
 						'options'		=> array(
 							'body-copy'	=> __('Body Copy', 'fl-builder'),
 							'intro-text'=> __('Intro Text', 'fl-builder'),
-							'secondary-intro'=> __('Secondary Intro', 'fl-builder'),
+							'intro-text-alt'=> __('Intro (Alt)', 'fl-builder'),
 							'small-text'=> __('Small Text', 'fl-builder')
 						)	
 					),

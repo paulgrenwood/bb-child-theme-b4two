@@ -14,7 +14,6 @@ function gwstandard_customizer_options( $wp_customize ){
 	===
 	*/
 	
-/*
 	// LOGO - SETTINGS
 	$wp_customize->add_setting( 'gwstandard_theme_logo' );
 	
@@ -30,7 +29,6 @@ function gwstandard_customizer_options( $wp_customize ){
 			)
 		)
 	);
-*/
 
 	/*
 	===
