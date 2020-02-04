@@ -104,7 +104,7 @@ add_filter( 'fl_theme_add_panel_data', function( $data, $key ) {
                 // Intro: Font Size
                 $data['sections']['fl-body-font']['options']['b42s__intro_text__font_size'] = array(
 					'setting' => array(
-                    	'default'		=> '18',
+                    	'default'		=> '27',
                     ),
                     'control' => array(
                         'class'			=> 'FLCustomizerControl',
@@ -140,7 +140,7 @@ add_filter( 'fl_theme_add_panel_data', function( $data, $key ) {
                 // Intro: Margin Bottom
                 $data['sections']['fl-body-font']['options']['b42s__intro_text__margin_bottom'] = array(
 	              	'setting' => array(
-		              	'default'		=> '18'
+		              	'default'		=> '37'
 	              	),
 	              	'control' => array(
 		              	'class'			=> 'FLCustomizerControl',
@@ -164,7 +164,7 @@ add_filter( 'fl_theme_add_panel_data', function( $data, $key ) {
 	            // Intro [Alt]: Font Size
 	            $data['sections']['fl-body-font']['options']['b42s__intro_text_alt__font_size'] = array(
 					'setting' => array(
-                    	'default'		=> '20',
+                    	'default'		=> '23',
                     ),
                     'control' => array(
                         'class'			=> 'FLCustomizerControl',
@@ -200,7 +200,7 @@ add_filter( 'fl_theme_add_panel_data', function( $data, $key ) {
                 // Intro [Alt]: Margin Bottom
                 $data['sections']['fl-body-font']['options']['b42s__intro_text_alt__margin_bottom'] = array(
 	              	'setting' => array(
-		              	'default'		=> '20'
+		              	'default'		=> '37'
 	              	),
 	              	'control' => array(
 		              	'class'			=> 'FLCustomizerControl',
@@ -260,12 +260,84 @@ add_filter( 'fl_theme_add_panel_data', function( $data, $key ) {
                 // Small: Margin Bottom
                 $data['sections']['fl-body-font']['options']['b42s__small_text__margin_bottom'] = array(
 	              	'setting' => array(
-		              	'default'		=> '10'
+		              	'default'		=> '22'
 	              	),
 	              	'control' => array(
 		              	'class'			=> 'FLCustomizerControl',
 		              	'type'			=> 'slider',
 		              	'label'			=> __('Small: Margin Bottom', 'b42s'),
+		              	'responsive'	=> true,
+		              	'choices' => array(
+			            	'min'		=> 0,
+			            	'max'		=> 100,
+			            	'step'		=> 1	
+		              	),
+	              	),
+                );
+                
+                
+                /*
+	            ===
+	            BLOCK QUOTE
+	            ===
+	            */
+	            
+	            // Blockquote: Color
+	            $data['sections']['fl-body-font']['options']['b42s__blockquote__color'] = array(
+		        	'setting' => array(
+			        	'default'		=> '#4a4a4a',
+		        	),
+		        	'control' => array(
+			        	'class'			=> 'WP_Customize_Color_Control',
+			        	'label'			=> __('Quote Color', 'b42s')	
+		        	),	
+	        	);
+	            
+	            // Blockquote: Font Size
+	            $data['sections']['fl-body-font']['options']['b42s__blockquote__font_size'] = array(
+					'setting' => array(
+                    	'default'		=> '22',
+                    ),
+                    'control' => array(
+                        'class'			=> 'FLCustomizerControl',
+                        'type'			=> 'slider',
+                        'label'			=> __( 'Quote: Font Size', 'b42s' ),
+                        'responsive'	=> true,
+                        'choices' => array(
+                            'min'		=> 10,
+                            'max'		=> 72,
+                            'step'		=> 1,
+                        ),
+                    ),
+                );
+                
+                // Blockquote: Line Height
+                $data['sections']['fl-body-font']['options']['b42s__blockquote__line_height'] = array(
+	                'setting' => array(
+		                'default'		=> '1.6'
+	                ),
+	                'control' => array(
+		                'class'			=> 'FLCustomizerControl',
+		                'type'			=> 'slider',
+		                'label'			=> __('Quote: Line Height', 'b42s'),
+		                'responsive'	=> true,
+		                'choices' => array(
+			            	'min'		=> 1,
+			            	'max'		=> 2.5,
+			            	'step'		=> 0.05
+		                ),
+	                ),
+                );
+                
+                // Blockquote: Margin Bottom
+                $data['sections']['fl-body-font']['options']['b42s__blockquote__margin_bottom'] = array(
+	              	'setting' => array(
+		              	'default'		=> '35'
+	              	),
+	              	'control' => array(
+		              	'class'			=> 'FLCustomizerControl',
+		              	'type'			=> 'slider',
+		              	'label'			=> __('Quote: Margin Bottom', 'b42s'),
 		              	'responsive'	=> true,
 		              	'choices' => array(
 			            	'min'		=> 0,
