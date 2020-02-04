@@ -1,6 +1,9 @@
 h2{
 	color: @b42s__h2__color;
-	font-weight: @b42s__h2__font_weight;
+	
+	& when not (@b42s__h2__font_weight = inherit ){
+		font-weight: @b42s__h2__font_weight;
+	}
 }
 
 h3{
