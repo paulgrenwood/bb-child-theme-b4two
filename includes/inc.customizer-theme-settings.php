@@ -9,6 +9,14 @@ add_filter( 'fl_theme_add_panel_data', function( $data, $key ) {
 		        ===========================
 		        */
 	        	
+	        	// Heading Divider
+	        	$data['sections']['fl-heading-font']['options']['b42s__fl-heading-font__line1'] = array(
+					'control' => array(
+						'class'			=> 'FLCustomizerControl',
+						'type'			=> 'line',
+					)
+				);
+	        	
 	        	// H2: Color
 	        	$data['sections']['fl-heading-font']['options']['b42s__h2__color'] = array(
 		        	'setting' => array(
@@ -20,6 +28,27 @@ add_filter( 'fl_theme_add_panel_data', function( $data, $key ) {
 		        	),	
 	        	);
 	        	
+	        	// H2: Font Weight
+	        	$data['sections']['fl-heading-font']['options']['b42s__h2__font_weight'] = array(
+		        	'setting' => array(
+			        	'default'		=> '700',
+		        	),
+		        	'control' => array(
+			        	'class'    => 'FLCustomizerControl',
+						'label'    => __( 'H2 Font Weight', 'fl-automator' ),
+						'type'     => 'font-weight',
+						'connect'  => 'fl-heading-font-family',
+		        	)
+	        	);
+	        	
+	        	// Heading Divider
+	        	$data['sections']['fl-heading-font']['options']['b42s__fl-heading-font__line2'] = array(
+					'control' => array(
+						'class'			=> 'FLCustomizerControl',
+						'type'			=> 'line',
+					)
+				);
+	        	
 	        	// H3: Color
 	        	$data['sections']['fl-heading-font']['options']['b42s__h3__color'] = array(
 		        	'setting' => array(
@@ -30,6 +59,27 @@ add_filter( 'fl_theme_add_panel_data', function( $data, $key ) {
 			        	'label'			=> __('H3 Color', 'b42s')	
 		        	),	
 	        	);
+	        	
+	        	// H3: Font Weight
+	        	$data['sections']['fl-heading-font']['options']['b42s__h3__font_weight'] = array(
+		        	'setting' => array(
+			        	'default'		=> '700',
+		        	),
+		        	'control' => array(
+			        	'class'    => 'FLCustomizerControl',
+						'label'    => __( 'H3 Font Weight', 'fl-automator' ),
+						'type'     => 'font-weight',
+						'connect'  => 'fl-heading-font-family',
+		        	)
+	        	);
+	        	
+	        	// Heading Divider
+	        	$data['sections']['fl-heading-font']['options']['b42s__fl-heading-font__line3'] = array(
+					'control' => array(
+						'class'			=> 'FLCustomizerControl',
+						'type'			=> 'line',
+					)
+				);
 	        	
 	        	// H4: Color
 	        	$data['sections']['fl-heading-font']['options']['b42s__h4__color'] = array(
@@ -301,7 +351,7 @@ add_filter( 'fl_theme_add_panel_data', function( $data, $key ) {
                     ),
                 );
                 
-                // Small: Line Height
+                // Header Nav: Line Height
                 $data['sections']['fl-body-font']['options']['b42s__header_nav__line_height'] = array(
 	                'setting' => array(
 		                'default'		=> '1.4'
@@ -319,7 +369,7 @@ add_filter( 'fl_theme_add_panel_data', function( $data, $key ) {
 	                ),
                 );
                 
-                // Small: Margin Bottom
+                // Header Nav: Margin Bottom
                 $data['sections']['fl-body-font']['options']['b42s__header_nav__letter_spacing'] = array(
 	              	'setting' => array(
 		              	'default'		=> '.7'
@@ -334,6 +384,23 @@ add_filter( 'fl_theme_add_panel_data', function( $data, $key ) {
 			            	'max'		=> 3,
 			            	'step'		=> .1	
 		              	),
+	              	),
+                );
+                
+                $data['sections']['fl-body-font']['options']['b42s__header_nav__font_format'] = array(
+	              	'setting' => array(
+		              	'default'		=> 'Uppercase'
+	              	),
+	              	'control' => array(
+		              	'class'			=> 'WP_Customize_Control',
+		              	'type'			=> 'select',
+		              	'label'			=> __('Header Nav: Font Format', 'b42s'),
+		              	'choices' => array(
+			              	'none'		=> __('Regular', 'b42s'),
+			              	'capitalize'=> __('Capitalize', 'b42s'),
+			              	'uppercase'	=> __('Uppercase', 'b42s'),
+			              	'lowercase'	=> __('Lowercase', 'b42s')
+		              	),	
 	              	),
                 );
                 
