@@ -54,7 +54,7 @@ h6{
 	}
 	
 	& when not (@b42s__h6__font_format = inherit ){
-		text-transformt: @b42s__h6__font_format;
+		text-transform: @b42s__h6__font_format;
 	}
 }
 
@@ -88,6 +88,14 @@ header.fl-builder-content ul.menu li > a{
 	font-size: unit(@b42s__header_nav__font_size, px);
 	line-height: @b42s__header_nav__line_height;
 	letter-spacing: unit(@b42s__header_nav__letter_spacing, px);
+	
+	& when not (@b42s__header_nav__font_format = inherit ){
+		text-transform: @b42s__header_nav__font_format;
+	}
+	
+	& when not (@b42s__header_nav__font_weight = inherit ){
+		font-weight: @b42s__header_nav__font_weight;
+	}
 }
 
 .b42s__fl-rich-text_small-text > p,

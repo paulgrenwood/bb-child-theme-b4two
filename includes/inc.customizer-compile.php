@@ -33,6 +33,8 @@ add_filter( 'fl_less_vars', function( $vars ) {
 	
 	$vars['b42s__header_nav__font_size'] = $mods['b42s__header_nav__font_size'] ?:16;
 	$vars['b42s__header_nav__line_height'] = $mods['b42s__header_nav__line_height'] ?: 1.4;
+	$vars['b42s__header_nav__font_weight'] = $mods['b42s__header_nav__font_weight'] ?: 'inherit';
+	$vars['b42s__header_nav__font_format'] = $mods['b42s__header_nav__font_format'] ?: 'inherit';
 	$vars['b42s__header_nav__letter_spacing'] = $mods['b42s__header_nav__letter_spacing'] ?: .7;
 	
 	$vars['b42s__blockquote__color'] = $mods['b42s__blockquote__color'] ?: '#4a4a4a';

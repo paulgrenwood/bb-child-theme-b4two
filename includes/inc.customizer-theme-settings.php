@@ -577,6 +577,28 @@ add_filter( 'fl_theme_add_panel_data', function( $data, $key ) {
 	              	),
                 );
                 
+                // H3: Font Weight
+	        	$data['sections']['fl-body-font']['options']['b42s__header_nav__font_weight'] = array(
+		        	'setting' => array(
+			        	'default'		=> 'inherit',
+		        	),
+		        	'control' => array(
+			        	'class'			=> 'WP_Customize_Control',
+						'label'			=> __( 'Header Nav: Font Weight', 'fl-automator' ),
+						'type'			=> 'select',
+						'choices' => array(
+							'inherit'	=> 'Default',
+							'200'		=> 'Thin',
+							'300'		=> 'Light',
+							'400'		=> 'Regular',
+							'500'		=> 'Medium',
+							'600'		=> 'Semi-Bold',
+							'700'		=> 'Bold',
+							'900'		=> 'Heavy'
+						)
+		        	)
+	        	);
+                
                 $data['sections']['fl-body-font']['options']['b42s__header_nav__font_format'] = array(
 	              	'setting' => array(
 		              	'default'		=> 'Uppercase'
