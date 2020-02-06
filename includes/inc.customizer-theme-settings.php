@@ -318,6 +318,7 @@ add_filter( 'fl_theme_add_panel_data', function( $data, $key ) {
 		        	),
 		        	'control' => array(
 			        	'class'			=> 'WP_Customize_Color_Control',
+			        	'label'			=> __('Quote Color', 'b42s')	
 		        	),	
 	        	);
 	            
