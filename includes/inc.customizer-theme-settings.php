@@ -453,6 +453,22 @@ add_filter( 'fl_theme_add_panel_data', function( $data, $key ) {
 		              	),
 	              	),
                 );
+                
+                // Intro: Font Style
+                $data['sections']['fl-heading-font']['options']['b42s__intro_text__font_style'] = array(
+	            	'setting' => array(
+		            	'normal' 	
+	            	),
+	            	'control' = array(
+		            	'class'			=> 'WP_Customize_Control',
+		            	'type'			=> 'select',
+		            	'label'			=> __('Intro: Font Style', 'b42s'),
+		            	'choices' => array(
+			            	'normal'	=> 'Normal',
+			            	'italic'	=> 'Italic'	
+		            	),	
+	            	),
+                );
 	        	
 	        	
 	        	/*
@@ -544,6 +560,22 @@ add_filter( 'fl_theme_add_panel_data', function( $data, $key ) {
 			            	'step'		=> 1	
 		              	),
 	              	),
+                );
+                
+                // Intro [Alt]: Font Style
+                $data['sections']['fl-body-font']['options']['b42s__intro_text_alt__font_style'] = array(
+	            	'setting' => array(
+		            	'normal' 	
+	            	),
+	            	'control' = array(
+		            	'class'			=> 'WP_Customize_Control',
+		            	'type'			=> 'select',
+		            	'label'			=> __('Intro: Font Style', 'b42s'),
+		            	'choices' => array(
+			            	'normal'	=> 'Normal',
+			            	'italic'	=> 'Italic'	
+		            	),	
+	            	),
                 );
                 
                 /*

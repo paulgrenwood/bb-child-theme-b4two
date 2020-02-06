@@ -22,10 +22,12 @@ add_filter( 'fl_less_vars', function( $vars ) {
     $vars['b42s__intro_text__font_size'] = $mods['b42s__intro_text__font_size'] ?: 23;
 	$vars['b42s__intro_text__line_height'] = $mods['b42s__intro_text__line_height'] ?: 1.6;
 	$vars['b42s__intro_text__margin_bottom'] = $mods['b42s__intro_text__margin_bottom'] ?: 37;
+	$vars['b42s__intro_text__font_style'] = $mods['b42s__intro_text__font_style'] ?: 'normal';
 	
 	$vars['b42s__intro_text_alt__font_size'] = $mods['b42s__intro_text_alt__font_size'] ?: 23;
 	$vars['b42s__intro_text_alt__line_height'] = $mods['b42s__intro_text_alt__line_height'] ?: 1.6;
 	$vars['b42s__intro_text_alt__margin_bottom'] = $mods['b42s__intro_text_alt__margin_bottom'] ?: 37;
+	$vars['b42s__intro_text_alt__font_style'] = $mods['b42s__intro_text_alt__font_style'] ?: 'normal';
 	
 	$vars['b42s__small_text__font_size'] = $mods['b42s__small_text__font_size'] ?: 14;
 	$vars['b42s__small_text__line_height'] = $mods['b42s__small_text__line_height'] ?: 1.6;
