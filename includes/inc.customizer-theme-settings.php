@@ -304,6 +304,14 @@ add_filter( 'fl_theme_add_panel_data', function( $data, $key ) {
 	              	),
                 );
                 
+                // Heading Divider
+	        	$data['sections']['fl-heading-font']['options']['b42s__fl-heading-font__line6'] = array(
+					'control' => array(
+						'class'			=> 'FLCustomizerControl',
+						'type'			=> 'line',
+					)
+				);
+                
                 
                 /*
 	            ===
