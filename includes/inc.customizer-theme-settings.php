@@ -459,7 +459,7 @@ add_filter( 'fl_theme_add_panel_data', function( $data, $key ) {
 	            	'setting' => array(
 		            	'normal' 	
 	            	),
-	            	'control' = array(
+	            	'control' => array(
 		            	'class'			=> 'WP_Customize_Control',
 		            	'type'			=> 'select',
 		            	'label'			=> __('Intro: Font Style', 'b42s'),
@@ -567,7 +567,7 @@ add_filter( 'fl_theme_add_panel_data', function( $data, $key ) {
 	            	'setting' => array(
 		            	'normal' 	
 	            	),
-	            	'control' = array(
+	            	'control' => array(
 		            	'class'			=> 'WP_Customize_Control',
 		            	'type'			=> 'select',
 		            	'label'			=> __('Intro: Font Style', 'b42s'),
