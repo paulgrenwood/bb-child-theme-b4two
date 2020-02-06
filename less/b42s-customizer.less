@@ -69,7 +69,8 @@ blockquote p{
 	margin-bottom: unit(@b42s__blockquote__margin_bottom, px);
 }
 
-@media (@mobile-breakpoint <= width < @medium-breakpoint ){
+
+@media (min-width: @mobile-breakpoint) and (max-width: (@medium-breakpoint - 1)){
 	.pp-quote-wrap .pp-pullquote-wrapper .pp-pullquote-content p,
 	blockquote p{
 		font-size: unit(@b42s__blockquote__font_size_medium, px);
@@ -79,7 +80,7 @@ blockquote p{
 	
 }
 
-@media ( width < @mobile-breakpoint ){
+@media (max-width: (@mobile-breakpoint - 1)) {
 	.pp-quote-wrap .pp-pullquote-wrapper .pp-pullquote-content p,
 	blockquote p{
 		font-size: unit(@b42s__blockquote__font_size_mobile, px);
@@ -97,13 +98,13 @@ p{
 	margin-bottom: unit(@b42s__body_font__margin_bottom, px);
 }
 
-@media (@mobile-breakpoint <= width < @medium-breakpoint ){
+@media (min-width: @mobile-breakpoint) and (max-width: (@medium-breakpoint - 1)){
 	p{
 		margin-bottom: unit(@b42s__body_font__margin_bottom_medium, px);
 	}
 }
 
-@media ( width < @mobile-breakpoint ){
+@media (max-width: (@mobile-breakpoint - 1)) {
 	p{
 		margin-bottom: unit(@b42s__body_font__margin_bottom_mobile, px);
 	}
@@ -114,13 +115,13 @@ li{
 	margin-bottom: unit(@b42s__body_font__margin_bottom, px);
 }
 
-@media (@mobile-breakpoint <= width < @medium-breakpoint ){
+@media (min-width: @mobile-breakpoint) and (max-width: (@medium-breakpoint - 1)){
 	li{
 		margin-bottom: unit(@b42s__body_font__margin_bottom_medium, px);
 	}
 }
 
-@media ( width < @mobile-breakpoint ){
+@media (max-width: (@mobile-breakpoint - 1)) {
 	li{
 		margin-bottom: unit(@b42s__body_font__margin_bottom_mobile, px);
 	}
@@ -137,7 +138,7 @@ p.intro_text{
 	font-style: @b42s__intro_text__font_style;
 }
 
-@media (@mobile-breakpoint <= width < @medium-breakpoint ){
+@media (min-width: @mobile-breakpoint) and (max-width: (@medium-breakpoint - 1)){
 	.b42s__fl-rich-text_intro-text > p,
 	.b42s__fl-rich-text_intro-text li,
 	p.intro_text{
@@ -147,7 +148,7 @@ p.intro_text{
 	}
 }
 
-@media ( width < @mobile-breakpoint ){
+@media (max-width: (@mobile-breakpoint - 1)) {
 	.b42s__fl-rich-text_intro-text > p,
 	.b42s__fl-rich-text_intro-text li,
 	p.intro_text{
@@ -166,7 +167,7 @@ p.intro_text_alt{
 	font-style: @b42s__intro_text_alt__font_style;
 }
 
-@media (@mobile-breakpoint <= width < @medium-breakpoint ){
+@media (min-width: @mobile-breakpoint) and (max-width: (@medium-breakpoint - 1)){
 	.b42s__fl-rich-text_intro-text-alt > p,
 	.b42s__fl-rich-text_intro-text-alt li,
 	p.intro_text_alt{
@@ -176,7 +177,7 @@ p.intro_text_alt{
 	}
 }
 
-@media ( width < @mobile-breakpoint ){
+@media (max-width: (@mobile-breakpoint - 1)) {
 	.b42s__fl-rich-text_intro-text-alt > p,
 	.b42s__fl-rich-text_intro-text-alt li,
 	p.intro_text_alt{
@@ -201,7 +202,7 @@ header.fl-builder-content ul.menu li > a{
 	}
 }
 
-@media (@mobile-breakpoint <= width < @medium-breakpoint ){
+@media (min-width: @mobile-breakpoint) and (max-width: (@medium-breakpoint - 1)){
 	header.fl-builder-content ul.menu li,
 	header.fl-builder-content ul.menu li > a{
 		font-size: unit(@b42s__header_nav__font_size_medium, px);
@@ -210,7 +211,7 @@ header.fl-builder-content ul.menu li > a{
 	}
 }
 
-@media ( width < @mobile-breakpoint ){
+@media (max-width: (@mobile-breakpoint - 1)) {
 	header.fl-builder-content ul.menu li,
 	header.fl-builder-content ul.menu li > a{
 		font-size: unit(@b42s__header_nav__font_size_mobile, px);
@@ -228,7 +229,7 @@ p.small_text{
 	margin-bottom: unit(@b42s__small_text__margin_bottom, px);
 }
 
-@media (@mobile-breakpoint <= width < @medium-breakpoint ){
+@media (min-width: @mobile-breakpoint) and (max-width: (@medium-breakpoint - 1)){
 	.b42s__fl-rich-text_small-text > p,
 	.b42s__fl-rich-text_small-text li,
 	small,
@@ -239,7 +240,7 @@ p.small_text{
 	}
 }
 
-@media ( width < @mobile-breakpoint ){
+@media (max-width: (@mobile-breakpoint - 1)) {
 	.b42s__fl-rich-text_small-text > p,
 	.b42s__fl-rich-text_small-text li,
 	small,
