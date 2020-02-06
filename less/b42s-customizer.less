@@ -58,6 +58,22 @@ h6{
 	}
 }
 
+.pp-quote-wrap .pp-pullquote-wrapper .pp-pullquote-content p,
+blockquote p{
+	font-family: @fl-heading-font-family;
+	font-weight: @fl-heading-font-weight;
+	font-format: @fl-heading-font-format;
+	color: @b42s__blockquote__color;
+	font-size: unit(@b42s__blockquote__font_size, px);
+	line-height: @b42s__blockquote__line_height;
+	margin-bottom: unit(@b42s__blockquote__margin_bottom, px);
+}
+
+.pp-quote-wrap .pp-pullquote-wrapper .pp-pullquote-content p:last-child,
+blockquote p:last-child{
+	margin-bottom: 0px;
+}
+
 p{
 	margin-bottom: unit(@b42s__body_font__margin_bottom, px);
 }
@@ -105,17 +121,4 @@ p.small_text{
 	font-size: unit(@b42s__small_text__font_size, px);
 	line-height: @b42s__small_text__line_height;
 	margin-bottom: unit(@b42s__small_text__margin_bottom, px);
-}
-
-.pp-quote-wrap .pp-pullquote-wrapper .pp-pullquote-content p,
-blockquote p{
-	color: @b42s__blockquote__color;
-	font-size: unit(@b42s__blockquote__font_size, px);
-	line-height: @b42s__blockquote__line_height;
-	margin-bottom: unit(@b42s__blockquote__margin_bottom, px);
-}
-
-.pp-quote-wrap .pp-pullquote-wrapper .pp-pullquote-content p:last-child,
-blockquote p:last-child{
-	margin-bottom: 0px;
 }
