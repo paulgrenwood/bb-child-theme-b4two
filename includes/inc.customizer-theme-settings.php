@@ -383,6 +383,76 @@ add_filter( 'fl_theme_add_panel_data', function( $data, $key ) {
 		              	),
 	              	),
                 );
+                
+                
+                // Heading Divider
+	        	$data['sections']['fl-heading-font']['options']['b42s__fl-heading-font__line7'] = array(
+					'control' => array(
+						'class'			=> 'FLCustomizerControl',
+						'type'			=> 'line',
+					)
+				);
+                
+                
+                /*
+	            ===
+	            INTRO TEXT
+				===
+				*/
+	        
+                // Intro: Font Size
+                $data['sections']['fl-heading-font']['options']['b42s__intro_text__font_size'] = array(
+					'setting' => array(
+                    	'default'		=> '27',
+                    ),
+                    'control' => array(
+                        'class'			=> 'FLCustomizerControl',
+                        'type'			=> 'slider',
+                        'label'			=> __( 'Intro: Font Size', 'b42s' ),
+                        'responsive'	=> true,
+                        'choices' => array(
+                            'min'		=> 10,
+                            'max'		=> 72,
+                            'step'		=> 1,
+                        ),
+                    ),
+                );
+                
+                // Intro: Line Height
+                $data['sections']['fl-heading-font']['options']['b42s__intro_text__line_height'] = array(
+	                'setting' => array(
+		                'default'		=> '1.6'
+	                ),
+	                'control' => array(
+		                'class'			=> 'FLCustomizerControl',
+		                'type'			=> 'slider',
+		                'label'			=> __('Intro: Line Height', 'b42s'),
+		                'responsive'	=> true,
+		                'choices' => array(
+			            	'min'		=> 1,
+			            	'max'		=> 2.5,
+			            	'step'		=> 0.05
+		                ),
+	                ),
+                );
+                
+                // Intro: Margin Bottom
+                $data['sections']['fl-heading-font']['options']['b42s__intro_text__margin_bottom'] = array(
+	              	'setting' => array(
+		              	'default'		=> '37'
+	              	),
+	              	'control' => array(
+		              	'class'			=> 'FLCustomizerControl',
+		              	'type'			=> 'slider',
+		              	'label'			=> __('Intro: Margin Bottom', 'b42s'),
+		              	'responsive'	=> true,
+		              	'choices' => array(
+			            	'min'		=> 0,
+			            	'max'		=> 100,
+			            	'step'		=> 1	
+		              	),
+	              	),
+                );
 	        	
 	        	
 	        	/*
@@ -415,65 +485,6 @@ add_filter( 'fl_theme_add_panel_data', function( $data, $key ) {
 	              	),
                 );
                 
-                /*
-	            ===
-	            INTRO TEXT
-				===
-				*/
-	        
-                // Intro: Font Size
-                $data['sections']['fl-body-font']['options']['b42s__intro_text__font_size'] = array(
-					'setting' => array(
-                    	'default'		=> '27',
-                    ),
-                    'control' => array(
-                        'class'			=> 'FLCustomizerControl',
-                        'type'			=> 'slider',
-                        'label'			=> __( 'Intro: Font Size', 'b42s' ),
-                        'responsive'	=> true,
-                        'choices' => array(
-                            'min'		=> 10,
-                            'max'		=> 72,
-                            'step'		=> 1,
-                        ),
-                    ),
-                );
-                
-                // Intro: Line Height
-                $data['sections']['fl-body-font']['options']['b42s__intro_text__line_height'] = array(
-	                'setting' => array(
-		                'default'		=> '1.6'
-	                ),
-	                'control' => array(
-		                'class'			=> 'FLCustomizerControl',
-		                'type'			=> 'slider',
-		                'label'			=> __('Intro: Line Height', 'b42s'),
-		                'responsive'	=> true,
-		                'choices' => array(
-			            	'min'		=> 1,
-			            	'max'		=> 2.5,
-			            	'step'		=> 0.05
-		                ),
-	                ),
-                );
-                
-                // Intro: Margin Bottom
-                $data['sections']['fl-body-font']['options']['b42s__intro_text__margin_bottom'] = array(
-	              	'setting' => array(
-		              	'default'		=> '37'
-	              	),
-	              	'control' => array(
-		              	'class'			=> 'FLCustomizerControl',
-		              	'type'			=> 'slider',
-		              	'label'			=> __('Intro: Margin Bottom', 'b42s'),
-		              	'responsive'	=> true,
-		              	'choices' => array(
-			            	'min'		=> 0,
-			            	'max'		=> 100,
-			            	'step'		=> 1	
-		              	),
-	              	),
-                );
                 
                 /*
 	            ===
