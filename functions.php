@@ -31,6 +31,7 @@ require_once 'includes/inc.icons.php';
 
 // Enqueue Scripts
 //	• Child Theme Scripts
+//	• Vendor Scripts
 require_once 'includes/inc.scripts.php';
 
 // Shortcodes
