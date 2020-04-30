@@ -33,6 +33,7 @@ require_once 'includes/inc.icons.php';
 //	• Child Theme Scripts
 //	• Vendor Scripts
 require_once 'includes/inc.scripts.php';
+require_once 'includes/inc.adminconfig.php';
 
 // Shortcodes
 //	• [year] & [YEAR]
