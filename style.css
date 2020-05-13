@@ -10,6 +10,110 @@ template: bb-theme
 
 /* Add your custom styles here... */ 
 
+@font-face{
+	font-family: 'Avenir Next';
+	src: url('fonts/AvenirNext/AvenirNext-UltraLight.woff2') format('woff2'),
+		url('fonts/AvenirNext/AvenirNext-UltraLight.woff') format('woff');
+	font-weight: 200;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: 'Avenir Next';
+	src: url('fonts/AvenirNext/AvenirNext-UltraLightItalic.woff2') format('woff2'),
+		url('fonts/AvenirNext/AvenirNext-UltraLightItalic.woff') format('woff');
+	font-weight: 200;
+	font-style: italic;
+}
+
+@font-face{
+	font-family: 'Avenir Next';
+	src: url('fonts/AvenirNext/AvenirNext-Light.woff2') format('woff2'),
+		url('fonts/AvenirNext/AvenirNext-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: 'Avenir Next';
+	src: url('fonts/AvenirNext/AvenirNext-Regular.woff2') format('woff2'),
+		url('fonts/AvenirNext/AvenirNext-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: 'Avenir Next';
+	src: url('fonts/AvenirNext/AvenirNext-Italic.woff2') format('woff2'),
+		url('fonts/AvenirNext/AvenirNext-Italic.woff') format('woff');
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face{
+	font-family: 'Avenir Next';
+	src: url('fonts/AvenirNext/AvenirNext-Medium.woff2') format('woff2'),
+		url('fonts/AvenirNext/AvenirNext-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: 'Avenir Next';
+	src: url('fonts/AvenirNext/AvenirNext-MediumItalic.woff2') format('woff2'),
+		url('fonts/AvenirNext/AvenirNext-MediumItalic.woff') format('woff');
+	font-weight: 500;
+	font-style: italic;
+}
+
+@font-face{
+	font-family: 'Avenir Next';
+	src: url('fonts/AvenirNext/AvenirNext-DemiBold.woff2') format('woff2'),
+		url('fonts/AvenirNext/AvenirNext-DemiBold.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: 'Avenir Next';
+	src: url('fonts/AvenirNext/AvenirNext-DemiBoldItalic.woff2') format('woff2'),
+		url('fonts/AvenirNext/AvenirNext-DemiBoldItalic.woff') format('woff');
+	font-weight: 600;
+	font-style: italic;
+}
+
+@font-face{
+	font-family: 'Avenir Next';
+	src: url('fonts/AvenirNext/AvenirNext-Bold.woff2') format('woff2'),
+		url('fonts/AvenirNext/AvenirNext-Bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: 'Avenir Next';
+	src: url('fonts/AvenirNext/AvenirNext-BoldItalic.woff2') format('woff2'),
+		url('fonts/AvenirNext/AvenirNext-BoldItalic.woff') format('woff');
+	font-weight: 700;
+	font-style: italic;
+}
+
+@font-face{
+	font-family: 'Avenir Next';
+	src: url('fonts/AvenirNext/AvenirNext-Heavy.woff2') format('woff2'),
+		url('fonts/AvenirNext/AvenirNext-Heavy.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: 'Avenir Next';
+	src: url('fonts/AvenirNext/AvenirNext-HeavyItalic.woff2') format('woff2'),
+		url('fonts/AvenirNext/AvenirNext-HeavyItalic.woff') format('woff');
+	font-weight: 900;
+	font-style: italic;
+}
+
 html,
 body{
 	text-rendering: optimizeLegibility;
